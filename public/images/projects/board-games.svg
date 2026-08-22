@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a1e"/>
+      <stop offset="100%" style="stop-color:#2d1b3d"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#f43f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <g transform="translate(200, 80)">
+    <rect x="0" y="0" width="60" height="60" rx="30" fill="#ec4899" opacity="0.8"/>
+    <rect x="80" y="0" width="60" height="60" rx="30" fill="#1a1a2e" stroke="#ec4899" stroke-width="3"/>
+    <rect x="160" y="0" width="60" height="60" rx="30" fill="#ec4899" opacity="0.8"/>
+    <rect x="240" y="0" width="60" height="60" rx="30" fill="#1a1a2e" stroke="#ec4899" stroke-width="3"/>
+    <rect x="0" y="80" width="60" height="60" rx="30" fill="#1a1a2e" stroke="#ec4899" stroke-width="3"/>
+    <rect x="80" y="80" width="60" height="60" rx="30" fill="#ec4899" opacity="0.8"/>
+    <rect x="160" y="80" width="60" height="60" rx="30" fill="#1a1a2e" stroke="#ec4899" stroke-width="3"/>
+    <rect x="240" y="80" width="60" height="60" rx="30" fill="#ec4899" opacity="0.8"/>
+    <rect x="0" y="160" width="60" height="60" rx="30" fill="#ec4899" opacity="0.8"/>
+    <rect x="80" y="160" width="60" height="60" rx="30" fill="#1a1a2e" stroke="#ec4899" stroke-width="3"/>
+    <rect x="160" y="160" width="60" height="60" rx="30" fill="#ec4899" opacity="0.8"/>
+    <rect x="240" y="160" width="60" height="60" rx="30" fill="#1a1a2e" stroke="#ec4899" stroke-width="3"/>
+  </g>
+  <text x="520" y="150" fill="#ec4899" font-family="monospace" font-size="16">AI: Minimax</text>
+  <text x="520" y="180" fill="#a0a0b8" font-family="monospace" font-size="14">Depth: 6</text>
+  <text x="520" y="210" fill="#a0a0b8" font-family="monospace" font-size="14">Eval: +0.85</text>
+  <text x="400" y="400" fill="#ec4899" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">AI Board Games</text>
+  <text x="400" y="430" fill="#6b6b80" font-family="sans-serif" font-size="14" text-anchor="middle">Connect Four &amp; Tic-Tac-Toe</text>
+</svg>

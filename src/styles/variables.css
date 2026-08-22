@@ -1,0 +1,66 @@
+:root,
+[data-theme="dark"] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-tertiary: #1a1a27;
+  --bg-card: rgba(26, 26, 39, 0.7);
+  --bg-glass: rgba(18, 18, 26, 0.8);
+  --text-primary: #f0f0f5;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6b6b80;
+  --accent-primary: #00d4ff;
+  --accent-secondary: #7c3aed;
+  --accent-tertiary: #ec4899;
+  --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #7c3aed 50%, #ec4899 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 212, 255, 0.3);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.15);
+  --navbar-bg: rgba(10, 10, 15, 0.85);
+  --particle-color: rgba(0, 212, 255, 0.4);
+  --timeline-line: rgba(0, 212, 255, 0.2);
+  --skill-bar-bg: rgba(255, 255, 255, 0.06);
+  --hover-overlay: rgba(0, 212, 255, 0.05);
+  --nav-link-hover-bg: rgba(0, 212, 255, 0.08);
+  --nav-link-hover-border: rgba(0, 212, 255, 0.25);
+  --nav-link-active-bg: rgba(0, 212, 255, 0.12);
+  --nav-link-glow: 0 0 20px rgba(0, 212, 255, 0.25);
+  --nav-link-glow-strong: 0 0 28px rgba(0, 212, 255, 0.4);
+  --nav-control-hover-bg: rgba(0, 212, 255, 0.1);
+  --nav-shimmer: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.15), transparent);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #eef0f6;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a68;
+  --text-muted: #8888a0;
+  --accent-primary: #0099cc;
+  --accent-secondary: #6d28d9;
+  --accent-tertiary: #db2777;
+  --gradient-primary: linear-gradient(135deg, #0099cc 0%, #6d28d9 50%, #db2777 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(0, 153, 204, 0.08) 0%, rgba(109, 40, 217, 0.08) 100%);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-glow: rgba(0, 153, 204, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 40px rgba(0, 153, 204, 0.1);
+  --navbar-bg: rgba(248, 249, 252, 0.9);
+  --particle-color: rgba(0, 153, 204, 0.25);
+  --timeline-line: rgba(0, 153, 204, 0.15);
+  --skill-bar-bg: rgba(0, 0, 0, 0.06);
+  --hover-overlay: rgba(0, 153, 204, 0.04);
+  --nav-link-hover-bg: rgba(0, 153, 204, 0.08);
+  --nav-link-hover-border: rgba(0, 153, 204, 0.2);
+  --nav-link-active-bg: rgba(0, 153, 204, 0.12);
+  --nav-link-glow: 0 0 16px rgba(0, 153, 204, 0.2);
+  --nav-link-glow-strong: 0 0 24px rgba(0, 153, 204, 0.3);
+  --nav-control-hover-bg: rgba(0, 153, 204, 0.08);
+  --nav-shimmer: linear-gradient(90deg, transparent, rgba(0, 153, 204, 0.12), transparent);
+}

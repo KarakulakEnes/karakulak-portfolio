@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1a14"/>
+      <stop offset="100%" style="stop-color:#0d2818"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <rect x="60" y="50" width="200" height="350" rx="12" fill="#0f1f17" stroke="#10b981" stroke-width="1" opacity="0.8"/>
+  <rect x="80" y="80" width="160" height="8" rx="4" fill="url(#accent3)" opacity="0.6"/>
+  <rect x="80" y="110" width="120" height="6" rx="3" fill="#10b981" opacity="0.3"/>
+  <rect x="80" y="150" width="160" height="60" rx="8" fill="#10b981" opacity="0.15"/>
+  <rect x="80" y="230" width="160" height="40" rx="8" fill="#10b981" opacity="0.1"/>
+  <rect x="80" y="290" width="160" height="40" rx="8" fill="#10b981" opacity="0.1"/>
+  <rect x="290" y="50" width="450" height="350" rx="12" fill="#0f1f17" stroke="#10b981" stroke-width="1" opacity="0.8"/>
+  <rect x="320" y="80" width="180" height="120" rx="8" fill="#10b981" opacity="0.1"/>
+  <text x="410" y="130" fill="#10b981" font-family="sans-serif" font-size="14" text-anchor="middle">Workout Plan</text>
+  <text x="410" y="155" fill="#6b6b80" font-family="sans-serif" font-size="11" text-anchor="middle">AI Generated</text>
+  <rect x="530" y="80" width="180" height="120" rx="8" fill="#10b981" opacity="0.1"/>
+  <text x="620" y="130" fill="#10b981" font-family="sans-serif" font-size="14" text-anchor="middle">Progress</text>
+  <text x="620" y="155" fill="#6b6b80" font-family="sans-serif" font-size="11" text-anchor="middle">Dashboard</text>
+  <rect x="320" y="230" width="390" height="140" rx="8" fill="#10b981" opacity="0.08"/>
+  <text x="400" y="420" fill="#10b981" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Gym Management</text>
+  <text x="400" y="445" fill="#6b6b80" font-family="sans-serif" font-size="14" text-anchor="middle">Full-Stack Web Platform</text>
+</svg>

@@ -1,0 +1,198 @@
+.project-card {
+  --card-border: 2px;
+  --card-radius: 16px;
+  position: relative;
+  display: block;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.4s ease;
+}
+
+/* Rotating gradient border — adapted from example.css pattern */
+.project-card::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140%;
+  height: 160%;
+  background-image: linear-gradient(
+    180deg,
+    var(--project-color, var(--accent-primary)),
+    var(--accent-primary),
+    var(--accent-secondary),
+    var(--accent-tertiary),
+    var(--project-color, var(--accent-primary))
+  );
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: project-card-border-spin 3s linear infinite;
+  z-index: 0;
+  transition: animation-duration 0.3s ease;
+}
+
+/* Inner mask — margin exposes the spinning gradient as a border ring */
+.project-card__inner {
+  position: relative;
+  z-index: 1;
+  margin: var(--card-border);
+  border-radius: calc(var(--card-radius) - var(--card-border));
+  overflow: hidden;
+  background: var(--bg-secondary);
+  transition: background 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-glow),
+              0 0 30px color-mix(in srgb, var(--project-color, var(--accent-primary)) 30%, transparent);
+}
+
+.project-card:hover::before {
+  animation-duration: 2s;
+  width: 160%;
+  height: 180%;
+}
+
+.project-card:hover .project-card__inner {
+  background: var(--bg-tertiary);
+}
+
+.project-card__image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: var(--bg-tertiary);
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.08);
+}
+
+.project-card__image-wrapper--contain {
+  background: #0a0a0a;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card__image-wrapper--contain .project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-card:hover .project-card__image-wrapper--contain .project-card__image {
+  transform: scale(1.04);
+}
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+
+.project-card__view {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-card__view {
+  background: var(--project-color, var(--accent-primary));
+  border-color: var(--project-color, var(--accent-primary));
+  color: #fff;
+}
+
+.project-card__content {
+  padding: 24px;
+}
+
+.project-card__meta {
+  margin-bottom: 10px;
+}
+
+.project-card__category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--project-color, var(--accent-primary));
+}
+
+.project-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.project-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card__tech {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.project-card__tech .tag {
+  font-size: 0.7rem;
+  padding: 3px 10px;
+}
+
+@keyframes project-card-border-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card::before {
+    animation: none;
+    background-image: linear-gradient(
+      135deg,
+      var(--project-color, var(--accent-primary)),
+      var(--accent-secondary)
+    );
+  }
+
+  .project-card:hover::before {
+    animation: none;
+  }
+}
