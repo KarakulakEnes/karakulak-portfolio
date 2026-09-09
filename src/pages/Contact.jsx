@@ -100,15 +100,15 @@ export default function Contact() {
                 </button>
                 <div className="contact-page__cv-row">
                   <a
-                    href="/cv/cv-tr.pdf"
-                    download="Nurettin-Enes-Karakulak-CV-TR.pdf"
+                    href="/cv/0001-Nurettin-Enes-Karakulak-CV-Turkish.pdf"
+                    download="0001-Nurettin-Enes-Karakulak-CV-Turkish.pdf"
                     className="btn btn-outline"
                   >
                     {t('contact.cvTr')}
                   </a>
                   <a
-                    href="/cv/cv-en.pdf"
-                    download="Nurettin-Enes-Karakulak-CV-EN.pdf"
+                    href="/cv/0001-Nurettin-Enes-Karakulak-CV-English.pdf"
+                    download="0001-Nurettin-Enes-Karakulak-CV-English.pdf"
                     className="btn btn-outline"
                   >
                     {t('contact.cvEn')}
